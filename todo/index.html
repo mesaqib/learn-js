@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="todo-section">
+        <div class="top">
+          <div class="date">
+            <span class="datee" id="get-date">  </span>
+            <span class="month"> <span id="month"></span>  <span id="fullYear"></span> </span>
+          </div>
+          <div class="day" id="day"></div>
+        </div>
+        <!-- End of top --> 
+
+        <div class="list">
+          <ul id="item-list">
+            <!-- <li>
+              <span>Item 1</span>
+              <img src="trash.png" alt="delete" />
+            </li> -->
+          </ul>
+
+        </div>
+        <!-- list end -->
+
+        <div class="bottom">
+          <input placeholder="Add Item" id="input-item" />
+          <button class="add-btn" id="add-item" onclick="addListItem()">ADD</button>
+        </div>
+      </div>
+      <!-- End of todo-section -->
+
+  <div class="model">
+     <h2>You haven't added any item.</h2>
+     <br>
+     <button class="model-btn" id="modelBtn">OK</button>
+  </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

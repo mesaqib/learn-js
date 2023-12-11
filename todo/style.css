@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 30px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d5d5d5;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  background-image: url(bg1.jpg);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-section {
+  background-color: white;
+  width: 400px;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 1px 1px 7px 3px #aaaaaa;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(54, 54, 54);
+  border-bottom: 1px solid rgb(240, 240, 240);
+}
+.top .date .datee {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.top .date .month {
+  font-size: 1rem;
+  margin-left: -4px;
+  font-weight: bold;
+}
+.top .day {
+  font-size: 2rem;
+}
+
+.list {
+  margin-top: 20px;
+  max-height: 300px;
+  overflow: scroll;
+  overflow-x: hidden;
+  position: relative;
+}
+
+
+
+.list ul {
+  padding-right: 10px;
+}
+.list ul li {
+  background-color: rgba(242, 242, 242, 0.558);
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+.list ul li img {
+  height: 20px;
+  cursor: pointer;
+}
+
+.list ul li {
+  list-style: none;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding-top: 20px;
+  border-top: 1px solid rgb(240, 240, 240);
+}
+.bottom input {
+  border-radius: 30px;
+  border: 1px solid rgb(171, 171, 171);
+  width: 100%;
+  height: 35px;
+  outline: none;
+  padding: 1px 20px;
+  font-size: 20px;
+}
+
+.bottom .add-btn {
+  border: none;
+  background-color: rgb(35, 191, 113);
+  width: 100px;
+  margin-left: 5px;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  color: white;
+}
+
+
+.model{
+    position: absolute;
+    height: 300px;
+    width: 400px;
+    background-color: white;
+    top: 26%;
+    z-index: 10;
+    border-radius: 30px;
+    padding: 30px;
+}
+.model{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: none;
+}
+.model-btn{
+  border: none;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  background-color: rgb(35, 191, 113);
+  cursor: pointer;
+  color: white;
+}
+
+.model-show{
+  display: block;
+  display: flex;
+}

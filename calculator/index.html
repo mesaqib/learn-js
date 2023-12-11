@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="cal">
+        <div class="screen">
+          <input type="" value="0" id="input-screen" readonly />
+        </div>
+        <!-- end screen -->
+
+        <div class="btn">
+          <button onclick="clearInput()">C</button>
+          <button onclick=" deleteLast()">Del</button>
+          <button onclick="takeInput('%')" disabled>%</button>
+          <button onclick="takeInput('/')">/</button>
+          <button onclick="takeInput(7)">7</button>
+          <button onclick="takeInput(8)">8</button>
+          <button onclick="takeInput(9)">9</button>
+          <button onclick="takeInput('*')">*</button>
+          <button onclick="takeInput(4)">4</button>
+          <button onclick="takeInput(5)">5</button>
+          <button onclick="takeInput(6)">6</button>
+          <button onclick="takeInput('+')">+</button>
+          <button onclick="takeInput(1)">1</button>
+          <button onclick="takeInput(2)">2</button>
+          <button onclick="takeInput(3)">3</button>
+          <button onclick="takeInput('-')">-</button>
+          <button onclick="takeInput(0)">0</button>
+          <button onclick="takeInput('00')">00</button>
+          <button onclick="takeInput('.')">.</button>
+          <button onclick="ourputResult()">=</button>
+        </div>
+        <!-- Btn ends -->
+      </div>
+      <!-- End of cal -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
